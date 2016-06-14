@@ -1,12 +1,10 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.controller.core.MainMenu;
-import com.twu.biblioteca.controller.core.Printer;
 import com.twu.biblioteca.model.MainMenuOptions;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.lang.annotation.Target;
 import java.util.List;
 
 import static org.hamcrest.core.IsEqual.equalTo;

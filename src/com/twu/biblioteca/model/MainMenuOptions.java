@@ -15,7 +15,7 @@ public class MainMenuOptions {
     }
 
 
-    public static List<String> getOptions(){
+    public List<String> getOptions(){
         return options;
     }
 

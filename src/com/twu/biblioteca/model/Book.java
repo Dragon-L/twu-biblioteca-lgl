@@ -19,6 +19,12 @@ public class Book {
         return bookId;
     }
 
+    public String getBookName(){ return bookName;}
+
+    public String getAuthor(){ return author;}
+
+    public String getPublishedYear(){ return publishedYear;}
+
     public boolean getIsBorrowed(){
         return isBorrowed;
     }

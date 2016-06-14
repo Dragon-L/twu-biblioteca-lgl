@@ -15,7 +15,6 @@ public class BookController {
         this.bookList = bookList;
     }
 
-
     public boolean CheckoutBook(String bookId) {
         if (books.CheckoutBook(bookId)){
             bookList.updateBookList(books);

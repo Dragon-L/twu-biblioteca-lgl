@@ -20,7 +20,7 @@ public class Books {
 
     public boolean CheckoutBook(String bookId){
         for (Book book:allBooks){
-            if (book.getBookId()==bookId && !book.getIsBorrowed()){
+            if (book.getBookId().equals(bookId) && !book.getIsBorrowed()){
                 book.setIsBorrowed(true);
                 return true;
             }
@@ -30,7 +30,7 @@ public class Books {
 
     public boolean ReturnBook(String bookId){
         for (Book book:allBooks){
-            if (book.getBookId()==bookId && book.getIsBorrowed()){
+            if (book.getBookId().equals(bookId) && book.getIsBorrowed()){
                 book.setIsBorrowed(false);
                 return true;
             }
