@@ -30,7 +30,7 @@ public class ListBookCommand implements MyCommand {
             result += String.format(" *  %-2s *  %-18s *  %-13s  *  %-5s  *\n",book.getBookId(),book.getBookName(),book.getAuthor(),book.getPublishedYear());
         }
         result += String.format(" *********************************************************\n");
-        result += String.format(" *                                1.Return the MainMenu  *\n");
+        result += String.format(" * 1.Checkout Book *2.Return Book *3.Return the MainMenu *\n");
         result += String.format(" *********************************************************\n");
         router.setCurrentMapper(mapper);
 

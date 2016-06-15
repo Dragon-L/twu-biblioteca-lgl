@@ -2,10 +2,10 @@ package com.twu.biblioteca.controller.shell;
 
 import com.twu.biblioteca.controller.core.MainMenu;
 
-public class MainMenuCommand implements MyCommand{
+public class ReturnMainMenuCommand implements MyCommand{
     private final MainMenu mainMenu;
 
-    public MainMenuCommand(MainMenu mainMenu){
+    public ReturnMainMenuCommand(MainMenu mainMenu){
         this.mainMenu = mainMenu;
     }
 

@@ -21,29 +21,33 @@ public class BibliotecaApp {
 
 
     public static void main(String[] args) {
-        MyCommand rootCommand = new MainMenuCommand(mainMenu);
+        MyCommand rootCommand = new ReturnMainMenuCommand(mainMenu);
 
 
         final Map<String,MyCommand> returnMainMenuMapper = new HashMap<String, MyCommand>(){
             {
-                put("1",new MainMenuCommand(mainMenu));
-            }
-        };
-        Map<String,MyCommand> mainMenuMapper = new HashMap<String, MyCommand>(){
-            {
-                put("1",new ListBookCommand(bookController,returnMainMenuMapper));
-                put("2",new CheckoutBookCommand(bookController,returnMainMenuMapper));
-                put("3",new ReturnBookCommand(bookController,returnMainMenuMapper));
-                put("4",new QuitCommand());
+                put("1",new ReturnMainMenuCommand(mainMenu));
             }
         };
 
+        final Map<String,MyCommand> bookListMapper = new HashMap<String, MyCommand>(){
+            {
+                put("1",new CheckoutBookCommand(bookController,returnMainMenuMapper));
+                put("2",new ReturnBookCommand(bookController,returnMainMenuMapper));
+                put("3",new ReturnMainMenuCommand(mainMenu));
+            }
+        };
+
+        Map<String,MyCommand> mainMenuMapper = new HashMap<String, MyCommand>(){
+            {
+                put("1",new ListBookCommand(bookController,bookListMapper));
+                put("2",new QuitCommand());
+            }
+        };
 
         Router router = new Router(mainMenuMapper,rootCommand);
         Controller controller = new Controller(router);
 
-
         controller.Start();
-
     }
 }

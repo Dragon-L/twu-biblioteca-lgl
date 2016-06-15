@@ -34,6 +34,10 @@ public class ReturnBookCommand implements MyCommand{
 
         result += String.format(" *                                1.Return the MainMenu  *\n");
         result += String.format(" *********************************************************\n");
+
+
+        router.setCurrentMapper(mapper);
+
         return result;
     }
 }

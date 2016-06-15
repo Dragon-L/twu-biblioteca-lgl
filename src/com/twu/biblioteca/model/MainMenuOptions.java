@@ -9,8 +9,6 @@ public class MainMenuOptions {
     public MainMenuOptions(){
         this.options = new ArrayList<String>();
         options.add("List Book");
-        options.add("Checkout Book");
-        options.add("Return Book");
         options.add("Quit");
     }
 
