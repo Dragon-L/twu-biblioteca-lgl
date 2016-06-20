@@ -26,6 +26,6 @@ public class Router {
     public void setOriginMapper(){ currentMapper = originMapper; }
 
     public String excuteRootCommand(){
-        return rootCommand.excute(this);
+        return rootCommand.execute(this);
     }
 }

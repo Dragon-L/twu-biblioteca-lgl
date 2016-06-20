@@ -15,7 +15,7 @@ public class ListBookCommand implements MyCommand {
         this.mapper = mapper;
     }
 
-    public String excute(Router router){
+    public String execute(Router router){
         String result = "";
 
         result += String.format(" *********************************************************\n");

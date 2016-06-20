@@ -1,7 +1,7 @@
 package com.twu.biblioteca.controller.shell;
 
 public class QuitCommand implements MyCommand{
-    public String excute(Router router){
+    public String execute(Router router){
         System.out.print(" *********************************************************\n");
         System.out.print(" *                       Bye                             *\n");
         System.out.print(" *********************************************************\n");

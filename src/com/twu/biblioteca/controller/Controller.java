@@ -30,7 +30,7 @@ public class Controller {
                 }
             }while (command == null);
 
-            String outputMessage = command.excute(router);
+            String outputMessage = command.execute(router);
             System.out.println(outputMessage);
         }
     }

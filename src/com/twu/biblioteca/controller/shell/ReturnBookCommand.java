@@ -14,7 +14,7 @@ public class ReturnBookCommand implements MyCommand{
         this.mapper = mapper;
     }
 
-    public String excute(Router router){
+    public String execute(Router router){
         String result = "";
         System.out.print(" *********************************************************\n");
         System.out.print(" *          Please input the id  of book                 *\n");

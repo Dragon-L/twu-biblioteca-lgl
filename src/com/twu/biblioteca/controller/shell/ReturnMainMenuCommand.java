@@ -9,7 +9,7 @@ public class ReturnMainMenuCommand implements MyCommand{
         this.mainMenu = mainMenu;
     }
 
-    public String excute(Router router){
+    public String execute(Router router){
         String result = "";
         result += String.format(" *********************************************************\n");
         result += String.format(" *                       MainMenu                        *\n");
