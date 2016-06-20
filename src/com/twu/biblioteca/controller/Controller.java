@@ -1,7 +1,7 @@
 package com.twu.biblioteca.controller;
 
-import com.twu.biblioteca.controller.shell.MyCommand;
-import com.twu.biblioteca.controller.shell.Router;
+import com.twu.biblioteca.controller.command.MyCommand;
+import com.twu.biblioteca.controller.commandRouter.Router;
 
 import java.util.Scanner;
 

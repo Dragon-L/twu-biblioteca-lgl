@@ -1,9 +1,10 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.controller.Controller;
+import com.twu.biblioteca.controller.commandRouter.Router;
 import com.twu.biblioteca.controller.core.BookController;
 import com.twu.biblioteca.controller.core.MainMenu;
-import com.twu.biblioteca.controller.shell.*;
+import com.twu.biblioteca.controller.command.*;
 import com.twu.biblioteca.model.BookList;
 import com.twu.biblioteca.model.Books;
 import com.twu.biblioteca.model.MainMenuOptions;
